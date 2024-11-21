@@ -1,0 +1,101 @@
+body {
+  background-color: #4158D0;
+  background-image: linear-gradient(116deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  width: 100vw;
+  height: 1000px;
+  display: flex;
+  flex-direction: space-around;
+  justify-content: space-around;
+  align-items: nowrap;
+  flex-wrap: wrap;
+}
+body nav {
+  width: 100vw !important;
+  display: block !important;
+  border-radius: 6px !important;
+  height: 56px;
+}
+
+.loginContainer {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  height: 500px !important;
+}
+.loginContainer h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  color: #333;
+}
+.loginContainer p {
+  color: #666;
+  font-size: 14px;
+}
+.loginContainer form .inputGroup {
+  margin: 15px 0;
+}
+.loginContainer form .inputGroup input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #f3f4f6;
+  font-size: 16px;
+}
+.loginContainer form .inputGroup input:focus {
+  outline: 2px solid #3f51b5;
+}
+.loginContainer form .loginButton {
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.loginContainer form .loginButton:hover {
+  background-color: #0056b3;
+}
+.loginContainer form .loginButton:active {
+  background-color: #004085;
+}
+.loginContainer .divider {
+  margin: 20px 0;
+  color: #666;
+  font-size: 14px;
+}
+.loginContainer .googleLogin {
+  background: none;
+  color: #3f51b5;
+  border: 2px solid #3f51b5;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.loginContainer .googleLogin:hover {
+  background: #3f51b5;
+  color: #fff;
+}
+.loginContainer .signupLink {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+.loginContainer .signupLink a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+.loginContainer .signupLink a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=auth.css.map */

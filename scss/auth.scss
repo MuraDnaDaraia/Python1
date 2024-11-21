@@ -1,0 +1,114 @@
+@import '_mixins';
+@import '_variables';
+body{
+    background-color: #4158D0;
+background-image: linear-gradient(116deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width: 100vw;
+    height: 1000px;
+    @include goFlex(space-around, space-around, nowrap);
+    nav{
+        width: 100vw !important;
+        display: block !important;
+        border-radius: 6px !important;
+        height: 56px;
+    }
+}
+
+.loginContainer {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 500px !important;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 12px;
+        color: #333;
+    }
+
+    p {
+        color: #666;
+        font-size: 14px;
+    }
+
+    form {
+        .inputGroup {
+        margin: 15px 0;
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #f3f4f6;
+            font-size: 16px;
+
+            &:focus {
+            outline: 2px solid #3f51b5;
+            }
+        }
+        }
+
+        .loginButton {
+        background: #3f51b5;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+        &:hover {
+        background-color: #0056b3;
+        }
+        &:active {
+        background-color: #004085;
+        }
+        }
+    }
+
+    .divider {
+        margin: 20px 0;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .googleLogin {
+        background: none;
+        color: #3f51b5;
+        border: 2px solid #3f51b5;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+
+        &:hover {
+        background: #3f51b5;
+        color: #fff;
+        }
+    }
+
+    .signupLink {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+
+        a {
+        color: #3f51b5;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+        }
+    }
+}
